@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Используй min-height */
+  position: relative;
+  background-image: url(Cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* УДАЛИ ЭТО: overflow: hidden; */
+  overflow: auto; /* Тень перестанет обрезаться */
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Landing-Page {
+  /* Позиционирование */
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  /* Размеры и отступы */
+  width: 720px;
+  min-height: 350px;
+  padding: 40px;
+  padding-left: 25px; /* Сохранил твой отступ из кода */
+
+  /* Оформление */
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 10px solid #ececec;
+
+   box-shadow: rgba(2, 185, 241, 0.090) 0px 60px 80px, rgba(0, 140, 254, 0.070) 0px 45px 50px;
+  /* Важно для тени: убедись, что у родителя (body) НЕТ свойства overflow: hidden */
+}
+
+.logo {
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  top: 100px; /* Расстояние от верхнего края карточки */
+  right: 77px; /* Расстояние от правого края карточки */
+  border: 3px solid #e3d6d6;
+}
+.header-row {
+  padding-top: 25px;
+  padding-left: 25px;
+  display: flex; /* Включаем гибкий контейнер */
+  flex-direction: row; /* Выстраиваем в строку (по умолчанию) */
+  gap: 35px; /* Расстояние между элементами */
+  align-items: center; /* Выравнивание по вертикали (чтобы были на одной линии) */
+  margin-bottom: 1px; /* Отступ снизу от этой строки */
+}
+.count {
+  font-size: 120px;
+  padding-bottom: 0px;
+  margin: 0px;
+  line-height: 1;
+  color: #1a202c;
+}
+.status {
+  font-size: 35px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+}
+.author {
+  font-size: 40px;
+  color: #333333;
+}
+
+.information {
+  padding-left: 25px;
+  display: inline-block;
+  margin-right: 15px; /* отступ справа */
+  text-decoration: none;
+  padding-right: 0px;
+  font-size: 40px;
+  color: #1a202c;
+  display: flex;
+  gap: 0px;
+}
+h1 {
+  font-size: 120px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  color: #1a202c;
+}
+p {
+  position: absolute;
+  top: 137px; /* Расстояние от верхнего края карточки */
+  right: 70px; /* Расстояние от правого края карточки */
+  font-weight: bold;
+  font-size: x-small;
+}
